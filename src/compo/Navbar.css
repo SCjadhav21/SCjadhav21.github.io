@@ -1,0 +1,7 @@
+.navlink:hover {
+  color: red;
+  border-bottom: 3px solid red;
+}
+.navlink2:hover {
+  color: red;
+}

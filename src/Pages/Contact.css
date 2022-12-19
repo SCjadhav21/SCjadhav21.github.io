@@ -1,0 +1,61 @@
+.contact_icon {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon {
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 7px 17px;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon_box {
+  width: 170px;
+  transition: transform 0.5s linear;
+}
+
+.icon_box:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
+}
+
+#icon1 {
+  background-color: #0984c2;
+}
+#icon2 {
+  background-color: rgb(39, 36, 36);
+}
+
+#icon3 {
+  background-color: rgb(226, 13, 13);
+}
+#icon4 {
+  background-color: blue;
+}
+#icon5 {
+  background-color: #0984c2;
+}
+
+.input_tag {
+  height: 45px;
+  width: 90%;
+  margin-top: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(207, 205, 205);
+  cursor: text;
+}
+
+.input_btn:hover {
+  cursor: pointer;
+  background-color: #eb144c;
+  transition: 0.6s ease;
+}
