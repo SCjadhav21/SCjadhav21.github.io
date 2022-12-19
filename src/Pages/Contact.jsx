@@ -17,6 +17,8 @@ const Contact = () => {
     email: "",
     fullName: "",
     massage: "",
+    mobile: "",
+
     id: Date.now(),
   });
   const form = useRef();
@@ -27,9 +29,12 @@ const Contact = () => {
   };
   const handelChange = (e) => {
     let { name, value } = e.target;
+    console.log(name, value);
     setMassage({ ...massage, [name]: value });
+    console.log(massage);
   };
-  const handelSubmit = async () => {
+  const handleSubmit = async () => {
+    console.log(massage);
     const response = await fetch(
       "https://mock-server-app-pzg9.onrender.com/message",
       {
@@ -41,6 +46,14 @@ const Contact = () => {
         },
       }
     );
+    setMassage({
+      email: "",
+      fullName: "",
+      massage: "",
+      mobile: "",
+
+      id: Date.now(),
+    });
   };
 
   return (
@@ -132,9 +145,11 @@ const Contact = () => {
                   <form ref={form} onSubmit={sendEmail}>
                     <Box>
                       <Input
+                        onChange={handelChange}
+                        value={massage.fullName}
                         color="#fff"
                         required={true}
-                        name="user_name"
+                        name="fullName"
                         className="input_tag"
                         type="text"
                         placeholder="Full Name"
@@ -142,29 +157,36 @@ const Contact = () => {
                     </Box>
                     <Box>
                       <Input
+                        onChange={handelChange}
+                        value={massage.email}
                         color="#fff"
                         required={true}
-                        name="user_email"
+                        name="email"
                         className="input_tag"
-                        type="text"
+                        type="email"
                         placeholder="Email"
                       />
                     </Box>
                     <Box>
                       <Input
+                        onChange={handelChange}
+                        value={massage.mobile}
                         color="#fff"
+                        name="mobile"
                         required={true}
                         className="input_tag"
                         type="number"
-                        placeholder="Number"
+                        placeholder="Mobile Number"
                       />
                     </Box>
                     <Box className="input_message">
                       <Textarea
+                        onChange={handelChange}
+                        value={massage.massage}
                         color="#fff"
                         mb="15px"
                         required={true}
-                        name="message"
+                        name="massage"
                         height=" 150px"
                         marginTop="20px"
                         borderRadius="10px"
@@ -177,6 +199,7 @@ const Contact = () => {
                     </Box>
                     <Box>
                       <Button
+                        onClick={handleSubmit}
                         type="submit"
                         height="45px"
                         width="90%"

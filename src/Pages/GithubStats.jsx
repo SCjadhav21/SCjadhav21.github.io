@@ -1,6 +1,7 @@
-import { Box, Heading, Img } from "@chakra-ui/react";
+import { Box, Text, Heading, Img } from "@chakra-ui/react";
 import React from "react";
 import image2 from "../aboutBack2.png";
+import GitHubCalendar from "react-github-calendar";
 
 const GithubStats = () => {
   return (
@@ -31,6 +32,19 @@ const GithubStats = () => {
           w={["70%", "", "50%"]}
         />
       </Box>{" "}
+      <Box
+        display="flex"
+        justifyContent="center"
+        flexDirection="column"
+        p="10px"
+        bgColor="#1C2125"
+        mt="30px"
+        alignItems="center"
+        color="#fff"
+      >
+        <Text color="#FF0080">Github Calendar</Text>
+        <GitHubCalendar username="SCjadhav21" />
+      </Box>
     </Box>
   );
 };

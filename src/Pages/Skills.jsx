@@ -233,8 +233,8 @@ export const Skills = () => {
 
         <Box m="auto" mt="40px" w="80%" className="skills_grid">
           <SimpleGrid columns={[2, 3, 4, 5]} spacing="30px">
-            {skills?.map((elem) => (
-              <Box>
+            {skills?.map((elem, index) => (
+              <Box key={index}>
                 <Box>
                   <Box
                     key={elem.name}
