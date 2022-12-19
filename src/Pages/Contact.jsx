@@ -10,13 +10,37 @@ import {
 } from "@chakra-ui/react";
 import image from "../background2.png";
 import React, { useRef } from "react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [massage, setMassage] = useState({
+    email: "",
+    fullName: "",
+    massage: "",
+    id: Date.now(),
+  });
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
     e.target.reset();
+  };
+  const handelChange = (e) => {
+    let { name, value } = e.target;
+    setMassage({ ...massage, [name]: value });
+  };
+  const handelSubmit = async () => {
+    const response = await fetch(
+      "https://mock-server-app-pzg9.onrender.com/message",
+      {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        data: JSON.stringify(massage),
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      }
+    );
   };
 
   return (
@@ -57,7 +81,6 @@ const Contact = () => {
                         target="_blank"
                       >
                         <Box className="icon" id="icon1">
-                          {/* <FaLinkedin /> */}
                           <h3>LinkedIn</h3>
                         </Box>
                       </a>
@@ -69,7 +92,6 @@ const Contact = () => {
                         target="_blank"
                       >
                         <Box className="icon" id="icon2">
-                          {/* <FaGithub /> */}
                           <h3>GitHub</h3>
                         </Box>
                       </a>
@@ -81,7 +103,6 @@ const Contact = () => {
                         target="_blank"
                       >
                         <Box className="icon" id="icon3">
-                          {/* <FiMail /> */}
                           <h3>Gmail</h3>
                         </Box>
                       </a>
@@ -93,7 +114,6 @@ const Contact = () => {
                         target="_blank"
                       >
                         <Box className="icon" id="icon5">
-                          {/* <AiOutlineWhatsApp /> */}
                           <h3>WhatsApp</h3>
                         </Box>
                       </a>
@@ -101,7 +121,6 @@ const Contact = () => {
                     <Box className="icon_box">
                       <a href="" rel="noopener norefferer" target="_blank">
                         <Box className="icon" id="icon4">
-                          {/* <BiPhoneCall /> */}
                           <h3>8830637124</h3>
                         </Box>
                       </a>
@@ -182,15 +201,7 @@ const Contact = () => {
       <br />
       <Box className="footer" style={{ textAlign: "center" }}>
         <span style={{ fontSize: "20px", color: "red", fontWeight: "bold" }}>
-          {/* Style will be inherited from the parent element */}
-          {/* <Typewriter */}
           Made with 💗 by Suraj Jadhav
-          {/* loop={5000000000}
-          cursor cursorStyle="|" typeSpeed={100}
-          deleteSpeed={100}
-          delaySpeed={2000} */}
-          {/* // onLoopDone={handleDone} */}
-          {/* // onType={handleType} */}
         </span>
       </Box>
     </Box>

@@ -1,14 +1,13 @@
 import { useEffect } from "react";
 import "./App.css";
 import Navbar from "./compo/Navbar";
+import GithubStats from "./Pages/GithubStats";
 
 function App() {
-  useEffect(() => {
-    document.title = "Suraj_Jadahv_portfolio";
-  }, []);
   return (
     <div className="App">
       <Navbar />
+      {/* <GithubStats /> */}
     </div>
   );
 }

@@ -24,6 +24,7 @@ import problemSolving from "../Images/Skill_Icon/problemSolving.png";
 import "./skills.css";
 
 import { useState } from "react";
+import GithubStats from "./GithubStats";
 
 export const Skills = () => {
   const [btn, setBtn] = useState("all");
@@ -165,106 +166,109 @@ export const Skills = () => {
   // console.log(skills);
 
   return (
-    <Box
-      p="50px 40px"
-      backgroundImage={image}
-      className="skills_container"
-      id="skills"
-    >
+    <>
       <Box
-        gap="5px"
-        p="20px 0px"
-        display="flex"
-        color="white"
-        justifyContent="center"
-        fontSize="40px"
-        fontWeight="bold"
-        className="skills_heading"
+        p="50px 40px"
+        backgroundImage={image}
+        className="skills_container"
+        id="skills"
       >
-        <h2>
-          Tech <span>Stack</span> & <span>Soft Skill</span>
-        </h2>
-      </Box>
+        <Box
+          gap="5px"
+          p="20px 0px"
+          display="flex"
+          color="white"
+          justifyContent="center"
+          fontSize="40px"
+          fontWeight="bold"
+          className="skills_heading"
+        >
+          <h2>
+            Tech <span>Stack</span> & <span>Soft Skill</span>
+          </h2>
+        </Box>
 
-      <Box className="skills_btn">
-        <Button
-          fontSize="20px"
-          p="20px"
-          marginEnd="10px"
-          border="2px solid black"
-          onClick={handleAll}
-          style={{
-            backgroundColor: btn === "all" ? "red" : "#EBE2DD",
-            color: btn === "all" ? "#fff" : "red",
-          }}
-        >
-          All
-        </Button>
-        <Button
-          fontSize="20px"
-          p="20px"
-          bg="black"
-          marginEnd="10px"
-          border="2px solid black"
-          onClick={handleTechStack}
-          style={{
-            backgroundColor: btn === "techStack" ? "red" : "#EBE2DD",
-            color: btn === "techStack" ? "#fff" : "red",
-          }}
-        >
-          Tech Stack
-        </Button>
-        <Button
-          marginEnd="10px"
-          fontSize="20px"
-          p="20px"
-          border="2px solid black"
-          onClick={handleSoftSkill}
-          style={{
-            backgroundColor: btn === "softSkill" ? "red" : "#EBE2DD",
-            color: btn === "softSkill" ? "#fff" : "red",
-          }}
-        >
-          Soft Skill
-        </Button>
-      </Box>
+        <Box className="skills_btn">
+          <Button
+            fontSize="20px"
+            p="20px"
+            marginEnd="10px"
+            border="2px solid black"
+            onClick={handleAll}
+            style={{
+              backgroundColor: btn === "all" ? "red" : "#EBE2DD",
+              color: btn === "all" ? "#fff" : "red",
+            }}
+          >
+            All
+          </Button>
+          <Button
+            fontSize="20px"
+            p="20px"
+            bg="black"
+            marginEnd="10px"
+            border="2px solid black"
+            onClick={handleTechStack}
+            style={{
+              backgroundColor: btn === "techStack" ? "red" : "#EBE2DD",
+              color: btn === "techStack" ? "#fff" : "red",
+            }}
+          >
+            Tech Stack
+          </Button>
+          <Button
+            marginEnd="10px"
+            fontSize="20px"
+            p="20px"
+            border="2px solid black"
+            onClick={handleSoftSkill}
+            style={{
+              backgroundColor: btn === "softSkill" ? "red" : "#EBE2DD",
+              color: btn === "softSkill" ? "#fff" : "red",
+            }}
+          >
+            Soft Skill
+          </Button>
+        </Box>
 
-      <Box m="auto" mt="40px" w="80%" className="skills_grid">
-        <SimpleGrid columns={[2, 3, 4, 5]} spacing="30px">
-          {skills?.map((elem) => (
-            <Box>
+        <Box m="auto" mt="40px" w="80%" className="skills_grid">
+          <SimpleGrid columns={[2, 3, 4, 5]} spacing="30px">
+            {skills?.map((elem) => (
               <Box>
-                <Box
-                  key={elem.name}
-                  display="flex"
-                  justifyContent="center"
-                  justifyItems="center"
-                >
-                  <Img
-                    className="SkillImage"
-                    // borderRadius="50px"
-                    height="110px"
-                    w="70%"
-                    borderRadius="10px"
-                    src={elem.url}
-                    alt="skills_logo"
-                  />
-                </Box>
+                <Box>
+                  <Box
+                    key={elem.name}
+                    display="flex"
+                    justifyContent="center"
+                    justifyItems="center"
+                  >
+                    <Img
+                      className="SkillImage"
+                      // borderRadius="50px"
+                      height="110px"
+                      w="70%"
+                      borderRadius="10px"
+                      src={elem.url}
+                      alt="skills_logo"
+                    />
+                  </Box>
 
-                <Box
-                  fontSize="25px"
-                  fontWeight="bold"
-                  color="#fff"
-                  p="10px 0px"
-                >
-                  <h3>{elem.name}</h3>
+                  <Box
+                    fontSize="25px"
+                    fontWeight="bold"
+                    color="#fff"
+                    p="10px 0px"
+                  >
+                    <h3>{elem.name}</h3>
+                  </Box>
                 </Box>
               </Box>
-            </Box>
-          ))}
-        </SimpleGrid>
+            ))}
+          </SimpleGrid>
+        </Box>
       </Box>
-    </Box>
+      <GithubStats />
+    </>
   );
 };
 export default Skills;
