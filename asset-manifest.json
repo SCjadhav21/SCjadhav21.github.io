@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.944715ad.css",
-    "main.js": "/static/js/main.84f14aa2.js",
+    "main.js": "/static/js/main.11305185.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/zappos.png": "/static/media/zappos.b4be37d3bcafad02581b.png",
+    "static/media/Food_Hub.png": "/static/media/Food_Hub.d4c0a8877b4d7cc2ce47.png",
+    "static/media/ShopQ_Mart.png": "/static/media/ShopQ_Mart.ebed93692a23540d0ff7.png",
     "static/media/ssence.com.png": "/static/media/ssence.com.186d783ccd8b93c4e183.png",
     "static/media/aboutBack.png": "/static/media/aboutBack.37a49486b2b42f78080e.png",
     "static/media/Indded.com.png": "/static/media/Indded.com.b4d17d2378d68788cd7e.png",
@@ -25,11 +27,11 @@
     "static/media/nodeJs.png": "/static/media/nodeJs.1ce70ade2c2600f6df08.png",
     "index.html": "/index.html",
     "main.944715ad.css.map": "/static/css/main.944715ad.css.map",
-    "main.84f14aa2.js.map": "/static/js/main.84f14aa2.js.map",
+    "main.11305185.js.map": "/static/js/main.11305185.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.944715ad.css",
-    "static/js/main.84f14aa2.js"
+    "static/js/main.11305185.js"
   ]
 }
