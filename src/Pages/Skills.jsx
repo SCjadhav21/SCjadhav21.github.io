@@ -44,12 +44,6 @@ export const Skills = () => {
       category: "tech stack",
     },
 
-    // {
-    //   url: boostrap,
-    //   name: "Boostrap",
-    //   category: "tech stack",
-    // },
-
     {
       url: js,
       name: "JavaScript",
@@ -177,14 +171,15 @@ export const Skills = () => {
           gap="5px"
           p="20px 0px"
           display="flex"
-          color="white"
+          color="#FF0080"
           justifyContent="center"
-          fontSize="40px"
+          fontSize="32px"
           fontWeight="bold"
           className="skills_heading"
         >
           <h2>
-            Tech <span>Stack</span> & <span>Soft Skill</span>
+            Tech <span style={{ color: "#fff" }}>Stack</span> & Soft
+            <span style={{ color: "#fff" }}> Skill</span>
           </h2>
         </Box>
 

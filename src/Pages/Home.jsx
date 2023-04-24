@@ -1,4 +1,4 @@
-import { Box, Text, Image } from "@chakra-ui/react";
+import { Box, Text, Image, Button, Link } from "@chakra-ui/react";
 import React from "react";
 import "./Home.css";
 import image from "../background2.png";
@@ -6,11 +6,12 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
+
 function Home() {
   return (
     <>
       <Box
-        position="relative"
+        // position="relative"
         backgroundImage={image}
         paddingTop="90px"
         height="750px"
@@ -20,6 +21,7 @@ function Home() {
       >
         <Box mt="90px" p="20px" w="72%">
           <Text display="flex" justifyContent="center" alignItems="center">
+            ""
             <Image
               alignSelf="center"
               pt="10px"
@@ -51,12 +53,28 @@ function Home() {
           >
             Web Developer
           </Text>
+
+          <a href="./SURAJ_JADHAV_Resume.pdf" download>
+            <Button
+              color="#fff"
+              fontSize="20px"
+              mt="20px"
+              bgGradient="linear(to-l, #7928CA, #FF0080)"
+              h={["40px", "50px", "50px"]}
+              w={["150px", "200px", "200px"]}
+              onClick={() => {
+                window.open(
+                  "https://drive.google.com/file/d/1FhK5w52Bgf7-6-L-Xhv9Hrrn-B5eyyRL/view?usp=sharing",
+                  "_blank",
+                  "noopener,noreferrer"
+                );
+              }}
+            >
+              Resume
+            </Button>
+          </a>
         </Box>
       </Box>
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
     </>
   );
 }

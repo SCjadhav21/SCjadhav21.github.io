@@ -31,7 +31,7 @@ const GithubStats = () => {
           src="https://github-readme-stats.vercel.app/api/top-langs/?username=SCjadhav21&theme=react&border_radius=4.6&hide_border=true&layout=compact&show_icons=true"
           w={["70%", "", "50%"]}
         />
-      </Box>{" "}
+      </Box>
       <Box
         display="flex"
         justifyContent="center"

@@ -4,7 +4,8 @@ import style from "./project.css";
 import indeed from "../Images/project/Indded.com.png";
 import shop from "../Images/project/ssence.com.png";
 import food from "../Images/project/zappos.png";
-// import { FaGithub, FaEye } from "react-icons/fa";
+import ShopQ_mart from "../Images/project/ShopQ_Mart.png";
+import FoodHub from "../Images/project/Food_Hub.png";
 
 const Projects = () => {
   return (
@@ -23,29 +24,158 @@ const Projects = () => {
           <Text color=" black"> Section</Text>
         </Box>
 
-        <div className="project_grid">
+        <Box className="project_grid">
           <SimpleGrid columns={[1, 1, 2, 3]} spacing="40px" margin="auto">
             <Box>
-              <div className="project_box">
+              <Box className="project_box" h={["", "", "700", "650"]}>
                 <Box
                   display="flex"
                   justifyContent="center"
                   className="project_image"
                 >
-                  <img src={shop} alt="clockify" />
+                  <Img src={ShopQ_mart} alt="ShoQ_mart" />
                 </Box>
 
-                <div className="project_name">
+                <Box className="project_name">
+                  <h2>
+                    ShopQ_Mart <p></p> (Group project)
+                  </h2>
+                </Box>
+                <Box className="project_desc">
+                  <p>
+                    ShopQ_Mart is an Indian online marketplace, also India's
+                    first e-commerce market that connects sellers and buyers
+                    online and offers a trusted and safe online environment for
+                    shopping.
+                  </p>
+                </Box>
+                <Box
+                  display="flex"
+                  justifyContent="center"
+                  justifyItems="center"
+                  alignItems="center"
+                  pt="10px"
+                  className="project_tech_stack"
+                >
+                  <h5>
+                    <span>Tech Stack :</span> React, Nodejs, Javascript,
+                    Express, Html5, Mongodb, Css3, Mongoose, Cyclic, Readux,
+                    Chakra-UI, Vercel
+                  </h5>
+                </Box>
+                <Box className="project_icon">
+                  <Box className="github_link">
+                    <a
+                      href="https://github.com/SCjadhav21/Project_ShopQ_Mart"
+                      rel="noopener norefferer"
+                      target="_blank"
+                    >
+                      <Img
+                        src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
+                        alt=""
+                      />
+                    </a>
+                  </Box>
+                  <Box className="deploy_link">
+                    <a
+                      href="https://shopqmart.vercel.app/"
+                      rel="noopener norefferer"
+                      target="_blank"
+                    >
+                      <Img
+                        src="https://cdn-icons-png.flaticon.com/512/159/159078.png"
+                        alt=""
+                      />
+                    </a>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+            <Box>
+              <Box className="project_box" h={["", "", "700", "650"]}>
+                <Box
+                  display="flex"
+                  justifyContent="center"
+                  className="project_image"
+                >
+                  <Img src={FoodHub} alt="FoodHub" />
+                </Box>
+
+                <Box className="project_name">
+                  <h2>
+                    Food_Hub <p></p> (Group project)
+                  </h2>
+                </Box>
+                <Box className="project_desc">
+                  <p>
+                    Food Hub.com leading meat-free lifestyle platform, indulging
+                    you with delicious discounted vegetarian and vegan meals at
+                    popular restaurants and cafes. Experience a tasty, healthy ,
+                    and compassionate meatless dining experience now!
+                  </p>
+                </Box>
+                <Box
+                  display="flex"
+                  justifyContent="center"
+                  justifyItems="center"
+                  alignItems="center"
+                  pt="10px"
+                  className="project_tech_stack"
+                >
+                  <h5>
+                    <span>Tech Stack :</span> Javascript, Html5, Css3, Reactjs ,
+                    Chakra-UI, Vercel, Netlify
+                  </h5>
+                </Box>
+                <Box className="project_icon">
+                  <Box className="github_link">
+                    <a
+                      href="https://github.com/SCjadhav21/Project_Food_Hub"
+                      rel="noopener norefferer"
+                      target="_blank"
+                    >
+                      <Img
+                        src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
+                        alt=""
+                      />
+                    </a>
+                  </Box>
+                  <Box className="deploy_link">
+                    <a
+                      href="https://iridescent-biscochitos-61ac19.netlify.app/"
+                      rel="noopener norefferer"
+                      target="_blank"
+                    >
+                      <Img
+                        src="https://cdn-icons-png.flaticon.com/512/159/159078.png"
+                        alt=""
+                      />
+                    </a>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+            <Box>
+              <Box className="project_box" h={["", "", "700", "650"]}>
+                <Box
+                  display="flex"
+                  justifyContent="center"
+                  className="project_image"
+                >
+                  <Img src={shop} alt="clockify" />
+                </Box>
+
+                <Box className="project_name">
                   <h2>
                     S-SENSE<p></p>(Individual Project)
                   </h2>
-                </div>
-                <div className="project_desc">
+                </Box>
+                <Box className="project_desc">
                   <p>
-                    This app is a Fashon-Wear app of Mens and Womens and we can
-                    buy the Products from this app to our selected location.
+                    This app is a Fashion-Wear app for men and women, and we can
+                    buy the Products from this app at our selected location.
                   </p>
-                </div>
+                </Box>
                 <Box
                   display="flex"
                   justifyContent="center"
@@ -60,36 +190,36 @@ const Projects = () => {
                   </h5>
                 </Box>
 
-                <div className="project_icon">
-                  <div className="github_link">
+                <Box className="project_icon">
+                  <Box className="github_link">
                     <a
                       href="https://github.com/SCjadhav21/SCjadhav21-ssense.com-clone"
                       rel="noopener norefferer"
                       target="_blank"
                     >
-                      <img
+                      <Img
                         src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
                         alt=""
                       />
                     </a>
-                  </div>
-                  <div className="deploy_link">
+                  </Box>
+                  <Box className="deploy_link">
                     <a
-                      href="https://project-sscence-mu.vercel.app/"
+                      href="https://project-sscence.vercel.app/"
                       rel="noopener norefferer"
                       target="_blank"
                     >
-                      <img
+                      <Img
                         src="https://cdn-icons-png.flaticon.com/512/159/159078.png"
                         alt=""
                       />
                     </a>
-                  </div>
-                </div>
-              </div>
+                  </Box>
+                </Box>
+              </Box>
             </Box>
             <Box>
-              <div className="project_box">
+              <Box className="project_box" h={["", "", "700", "650"]}>
                 <Box
                   display="flex"
                   justifyContent="center"
@@ -98,19 +228,20 @@ const Projects = () => {
                   <Img src={indeed} alt="clockify" />
                 </Box>
 
-                <div className="project_name">
+                <Box className="project_name">
                   <h2>
                     Indeed.com <p></p> (Group project)
                   </h2>
-                </div>
-                <div className="project_desc">
+                </Box>
+                <Box className="project_desc">
                   <p>
-                    This website provides a job for jobseakers, a user can
-                    search a job as per his requirements like JobRole and where
-                    user want to search JobRole(location), If create a Employed
-                    account in site then user can Add the JobData in app.
+                    This website provides a job for job seekers, a user can
+                    Search for a job as per his requirements like JobRole and
+                    where user want to search JobRole(location), If create a
+                    Employed account in the site then the user can Add the
+                    JobData in the app
                   </p>
-                </div>
+                </Box>
 
                 <Box
                   display="flex"
@@ -124,36 +255,36 @@ const Projects = () => {
                     <span>Tech Stack :</span> JavaScript, Html, CSS,
                   </h5>
                 </Box>
-                <div className="project_icon">
-                  <div className="github_link">
+                <Box className="project_icon">
+                  <Box className="github_link">
                     <a
                       href="https://github.com/akshaykadu24/indeed.com-clone"
                       rel="noopener norefferer"
                       target="_blank"
                     >
-                      <img
+                      <Img
                         src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
                         alt=""
                       />
                     </a>
-                  </div>
-                  <div className="deploy_link">
+                  </Box>
+                  <Box className="deploy_link">
                     <a
                       href="https://deft-florentine-9618bc.netlify.app/"
                       rel="noopener norefferer"
                       target="_blank"
                     >
-                      <img
+                      <Img
                         src="https://cdn-icons-png.flaticon.com/512/159/159078.png"
                         alt=""
                       />
                     </a>
-                  </div>
-                </div>
-              </div>
+                  </Box>
+                </Box>
+              </Box>
             </Box>
             <Box>
-              <div className="project_box">
+              <Box className="project_box" h={["", "750", "650"]}>
                 <Box
                   display="flex"
                   justifyContent="center"
@@ -162,17 +293,17 @@ const Projects = () => {
                   <Img src={food} alt="food" />
                 </Box>
 
-                <div className="project_name">
+                <Box className="project_name">
                   <h2>
                     Zappos.com <p></p> (Group project)
                   </h2>
-                </div>
-                <div className="project_desc">
+                </Box>
+                <Box className="project_desc">
                   <p>
                     Zappos.com is an e-commerce website, where users can buy
                     shoes, clothing, handbags, accessories, and more.
                   </p>
-                </div>
+                </Box>
                 <Box
                   display="flex"
                   justifyContent="center"
@@ -185,36 +316,36 @@ const Projects = () => {
                     <span>Tech Stack :</span> JavaScript,Html, CSS,
                   </h5>
                 </Box>
-                <div className="project_icon">
-                  <div className="github_link">
+                <Box className="project_icon">
+                  <Box className="github_link">
                     <a
                       href="https://github.com/sanajitjana/Masai-Zappos-Army"
                       rel="noopener norefferer"
                       target="_blank"
                     >
-                      <img
+                      <Img
                         src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
                         alt=""
                       />
                     </a>
-                  </div>
-                  <div className="deploy_link">
+                  </Box>
+                  <Box className="deploy_link">
                     <a
                       href="https://masai-zappos-clone.netlify.app/"
                       rel="noopener norefferer"
                       target="_blank"
                     >
-                      <img
+                      <Img
                         src="https://cdn-icons-png.flaticon.com/512/159/159078.png"
                         alt=""
                       />
                     </a>
-                  </div>
-                </div>
-              </div>
+                  </Box>
+                </Box>
+              </Box>
             </Box>
           </SimpleGrid>
-        </div>
+        </Box>
       </Box>
     </Box>
   );

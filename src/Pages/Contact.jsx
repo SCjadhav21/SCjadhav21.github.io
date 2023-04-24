@@ -29,12 +29,10 @@ const Contact = () => {
   };
   const handelChange = (e) => {
     let { name, value } = e.target;
-    console.log(name, value);
+
     setMassage({ ...massage, [name]: value });
-    console.log(massage);
   };
   const handleSubmit = async () => {
-    console.log(massage);
     const response = await fetch(
       "https://mock-server-app-pzg9.onrender.com/message",
       {

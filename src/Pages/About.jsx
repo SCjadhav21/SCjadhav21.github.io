@@ -3,7 +3,7 @@ import React from "react";
 import { Box, HStack, Img, SimpleGrid, Text, Button } from "@chakra-ui/react";
 import { useState } from "react";
 
-import image from "../my_img.png";
+import image from "../sj2.png";
 import image2 from "../aboutBack2.png";
 const About = () => {
   const [btn, setBtn] = useState(false);
@@ -32,17 +32,18 @@ const About = () => {
         <Box
           display="flex"
           alignItems="center"
-          justifyContent="center"
+          justifyContent="space-around"
           w={["full", "full", "40%"]}
         >
           <Img
-            border="3px solid red"
-            borderRadius="50%"
-            w="350px"
+            border="2px solid red"
+            borderRadius="5%"
+            color={"red"}
+            h="380px"
             src={image}
           ></Img>
         </Box>
-        <Box w={["full", "full", "60%"]} p=" 20px 7%">
+        <Box w={["full", "full", "60%"]} p="20px 7%">
           <Box>
             <Button
               style={{
@@ -74,25 +75,25 @@ const About = () => {
               <Box>
                 <ul>
                   <li style={{ margin: "20px 0px" }}>
-                    Hello! I'am Suraj Jadhav and I enjoy creating things that
+                    Hello! I am Suraj Jadhav and I enjoy creating things that
                     live on the internet.
                   </li>
                   <li style={{ margin: "20px 0px" }}>
                     I'm a passionate Mern Developer, with strong administrative
-                    and communication skills, good attention to detail and the
+                    and communication skills, good attention to detail, and the
                     ability to write efficient code using MERN Stack.
                   </li>
                   <li style={{ margin: "20px 0px" }}>
                     My interest in web development started back last year when I
-                    was trying to edit things on the web, that thought me a lot
+                    was trying to edit things on the web, which thought me a lot
                     about HTML& CSS.
                   </li>
                   <li style={{ margin: "20px 0px" }}>
-                    Fast Forwarding to today, I built a number of web
-                    applications and major projects. Learned a great deal about
-                    teamwork, leadership, and communication. After months of
-                    rigorous training, here l am looking for an opportunity as a
-                    full stack web developer.
+                    Fast Forwarding to today, I built several web applications
+                    and major projects. Learned a great deal about teamwork,
+                    leadership, and communication. After months of rigorous
+                    training, here l am looking for an opportunity as a full
+                    stack web developer.
                   </li>
                 </ul>
               </Box>
@@ -125,7 +126,7 @@ const About = () => {
                           src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-3.svg"
                           alt="icon"
                         />
-                        <Text>100+ Hours Soft Skill Development</Text>
+                        <Text>200+ Hours Soft Skill Development</Text>
                       </HStack>
                       <HStack spacing={5}>
                         <Img
@@ -168,7 +169,7 @@ const About = () => {
                           src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                           alt="git-commit"
                         />
-                        <Text>100+ Contributions in the last five months</Text>
+                        <Text>400+ Contributions in the last five months</Text>
                       </HStack>
                     </SimpleGrid>
                   </HStack>

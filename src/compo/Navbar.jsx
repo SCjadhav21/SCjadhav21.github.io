@@ -9,10 +9,11 @@ import {
   MenuList,
   Show,
 } from "@chakra-ui/react";
+import { Link as NavLink } from "react-scroll";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import React from "react";
 import { useState } from "react";
-import { Routes, Route, NavLink } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import Home from "../Pages/Home";
@@ -22,25 +23,18 @@ import Skills from "../Pages/Skills";
 
 const Navbar = () => {
   const [linkno, setLinkno] = useState(1);
-  const [back, setBack] = useState(0);
+
   const handelClick = (p) => {
     setLinkno(p);
   };
-
-  window.addEventListener("scroll", (event) => {
-    setBack(1);
-  });
 
   return (
     <>
       <Show above="md">
         {" "}
         <Box
-          // bgColor={back}
-          style={{
-            backgroundColor: back === 1 ? "#151716" : "",
-            height: back === 1 ? "80px" : "100px",
-          }}
+          bgColor="#151716"
+          height="80px"
           p="0px 10px"
           position="fixed"
           zIndex={10}
@@ -77,67 +71,92 @@ const Navbar = () => {
           >
             <NavLink
               className="navlink"
+              activeClass="active"
+              smooth
+              spy
+              to="home"
               style={{
                 color: linkno === 1 ? "red" : "",
                 borderBottom: linkno === 1 ? "3px solid red" : "",
               }}
               onClick={() => handelClick(1)}
-              to="/"
             >
               Home
             </NavLink>
             <NavLink
               className="navlink"
+              activeClass="active"
+              smooth
+              spy
+              to="about"
               style={{
                 color: linkno === 2 ? "red" : "",
                 borderBottom: linkno === 2 ? "3px solid red" : "",
               }}
               onClick={() => handelClick(2)}
-              to="/about"
             >
               About
             </NavLink>
+
             <NavLink
+              activeClass="active"
+              smooth
+              spy
+              to="skills"
               className="navlink"
               style={{
                 color: linkno === 3 ? "red" : "",
                 borderBottom: linkno === 3 ? "3px solid red" : "",
               }}
               onClick={() => handelClick(3)}
-              to="/skills"
+              // to="/skills"
             >
               Skills
             </NavLink>
             <NavLink
               className="navlink"
+              activeClass="active"
+              smooth
+              spy
+              to="projects"
               style={{
                 color: linkno === 4 ? "red" : "",
                 borderBottom: linkno === 4 ? "3px solid red" : "",
               }}
               onClick={() => handelClick(4)}
-              to="/projects"
             >
               Projects
             </NavLink>
             <NavLink
               className="navlink"
+              activeClass="active"
+              smooth
+              spy
+              to="contact"
               onClick={() => handelClick(5)}
               style={{
                 color: linkno === 5 ? "red" : "",
                 borderBottom: linkno === 5 ? "3px solid red" : "",
               }}
-              to="/contact"
             >
               Contact
             </NavLink>
             <a
               className="navlink"
-              onClick={() => handelClick(6)}
+              onClick={() => {
+                handelClick(6);
+                window.open(
+                  "https://drive.google.com/file/d/1FhK5w52Bgf7-6-L-Xhv9Hrrn-B5eyyRL/view?usp=sharing",
+                  "_blank",
+                  "noopener,noreferrer"
+                );
+              }}
               style={{
                 color: linkno === 6 ? "red" : "",
                 borderBottom: linkno === 6 ? "3px solid red" : "",
               }}
-              href="https://drive.google.com/file/d/130lzJxVjCRQCx5d22QGaEQVVJ912SYRw/view?usp=sharing"
+              href="./SURAJ_JADHAV_Resume.pdf"
+              download
             >
               Resume
             </a>
@@ -152,10 +171,8 @@ const Navbar = () => {
           zIndex={10}
           w="full"
           color="#fff"
-          style={{
-            backgroundColor: back === 1 ? "#151716" : "",
-            height: back === 1 ? "80px" : "100px",
-          }}
+          bgColor="#151716"
+          height="80px"
           // border="1px solid black"
           display="flex"
           justifyContent="space-between"
@@ -197,19 +214,25 @@ const Navbar = () => {
                 <MenuItem bgColor="black" margin={1}>
                   <NavLink
                     className="navlink2"
+                    activeClass="active"
+                    smooth
+                    spy
+                    to="home"
                     onClick={() => handelClick(1)}
                     style={{ color: linkno === 1 ? "red" : "" }}
-                    to="/"
                   >
                     Home
                   </NavLink>
                 </MenuItem>
                 <MenuItem bgColor="black" margin={1}>
                   <NavLink
+                    activeClass="active"
+                    smooth
+                    spy
+                    to="about"
                     className="navlink2"
                     onClick={() => handelClick(2)}
                     style={{ color: linkno === 2 ? "red" : "" }}
-                    to="/about"
                   >
                     About
                   </NavLink>
@@ -217,9 +240,12 @@ const Navbar = () => {
                 <MenuItem bgColor="black" margin={1}>
                   <NavLink
                     className="navlink2"
+                    activeClass="active"
+                    smooth
+                    spy
+                    to="skills"
                     onClick={() => handelClick(3)}
                     style={{ color: linkno === 3 ? "red" : "" }}
-                    to="/skills"
                   >
                     Skills
                   </NavLink>
@@ -228,32 +254,45 @@ const Navbar = () => {
                 <MenuItem bgColor="black" margin={1}>
                   <NavLink
                     className="navlink2"
+                    activeClass="active"
+                    smooth
+                    spy
+                    to="projects"
                     onClick={() => handelClick(4)}
                     style={{ color: linkno === 4 ? "red" : "" }}
-                    to="/projects"
                   >
                     Projects
                   </NavLink>
                 </MenuItem>
                 <MenuItem bgColor="black" margin={1}>
                   <NavLink
+                    activeClass="active"
+                    smooth
+                    spy
+                    to="contact"
                     className="navlink2"
                     onClick={() => handelClick(5)}
                     style={{ color: linkno === 5 ? "red" : "" }}
-                    to="/contact"
                   >
                     Contact
                   </NavLink>
                 </MenuItem>
                 <MenuItem bgColor="black" margin={1}>
                   <a
-                    className="navlink"
-                    onClick={() => handelClick(6)}
+                    className="navlink2"
+                    onClick={() => {
+                      handelClick(6);
+                      window.open(
+                        "https://drive.google.com/file/d/1FhK5w52Bgf7-6-L-Xhv9Hrrn-B5eyyRL/view?usp=sharing",
+                        "_blank",
+                        "noopener,noreferrer"
+                      );
+                    }}
                     style={{
                       color: linkno === 6 ? "red" : "",
-                      borderBottom: linkno === 6 ? "3px solid red" : "",
                     }}
-                    href="https://drive.google.com/file/d/130lzJxVjCRQCx5d22QGaEQVVJ912SYRw/view?usp=sharing"
+                    href="./SURAJ_JADHAV_Resume.pdf"
+                    download
                   >
                     Resume
                   </a>
@@ -263,13 +302,22 @@ const Navbar = () => {
           </Box>
         </Box>
       </Hide>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Box id="home">
+        <Home />
+      </Box>
+      <Box id="about">
+        <About />
+      </Box>
+      <Box id="skills">
+        <Skills />
+      </Box>
+
+      <Box id="projects">
+        <Projects />
+      </Box>
+      <Box id="contact">
+        <Contact />
+      </Box>
     </>
   );
 };
