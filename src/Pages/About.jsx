@@ -73,7 +73,7 @@ const About = () => {
           {btn ? (
             <Box p="20px 0px">
               <Box>
-                <ul>
+                <ul id="user-detail-intro">
                   <li style={{ margin: "20px 0px" }}>
                     Hello! I am Suraj Jadhav and I enjoy creating things that
                     live on the internet.

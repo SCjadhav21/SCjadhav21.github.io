@@ -11,7 +11,8 @@ const GithubStats = () => {
       </Heading>
       <Box align="center">
         <Img
-          src="https://github-readme-stats.vercel.app/api?username=SCjadhav21&theme=react&border_radius=4.6&show_icons=true&count_private=true&hide_border=true&show_icons=true"
+          id="github-stats-card"
+          src="https://github-readme-stats.vercel.app/api?username=SCjadhav21&theme=cobalt&border_radius=4.6&show_icons=true&count_private=true&hide_border=true&show_icons=true"
           w={["90%", "", "70%"]}
         />
       </Box>
@@ -24,11 +25,13 @@ const GithubStats = () => {
         alignItems="center"
       >
         <Img
-          src="https://streak-stats.demolab.com?user=SCjadhav21&_border=true&theme=dark&hide_border=true&theme=react"
+          id="github-streak-stats"
+          src="https://streak-stats.demolab.com?user=SCjadhav21&theme=react&border_radius=4.6&hide_border=true&layout=compact&show_icons=true"
           w={["70%", "", "50%"]}
         />
         <Img
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=SCjadhav21&theme=react&border_radius=4.6&hide_border=true&layout=compact&show_icons=true"
+          id="github-top-langs"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=SCjadhav21&theme=cobalt&border_radius=4.6&hide_border=true&layout=compact&show_icons=true"
           w={["70%", "", "50%"]}
         />
       </Box>

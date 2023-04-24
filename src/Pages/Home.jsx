@@ -54,7 +54,7 @@ function Home() {
             Web Developer
           </Text>
 
-          <a href="./SURAJ_JADHAV_Resume.pdf" download>
+          <a id="resume-link-2" href="./SURAJ_JADHAV_Resume.pdf" download>
             <Button
               color="#fff"
               fontSize="20px"

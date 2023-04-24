@@ -33,6 +33,7 @@ const Navbar = () => {
       <Show above="md">
         {" "}
         <Box
+          id="nav-menu"
           bgColor="#151716"
           height="80px"
           p="0px 10px"
@@ -48,6 +49,7 @@ const Navbar = () => {
         >
           <Box>
             <Heading
+              id="user-detail-name"
               pl="30px"
               color="red"
               fontFamily="serif"
@@ -70,10 +72,11 @@ const Navbar = () => {
             justifyItems="center"
           >
             <NavLink
-              className="navlink"
+              className="nav-link home"
               activeClass="active"
               smooth
               spy
+              id="home"
               to="home"
               style={{
                 color: linkno === 1 ? "red" : "",
@@ -84,7 +87,7 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
-              className="navlink"
+              className="nav-link about"
               activeClass="active"
               smooth
               spy
@@ -103,7 +106,7 @@ const Navbar = () => {
               smooth
               spy
               to="skills"
-              className="navlink"
+              className="nav-link skills"
               style={{
                 color: linkno === 3 ? "red" : "",
                 borderBottom: linkno === 3 ? "3px solid red" : "",
@@ -114,7 +117,7 @@ const Navbar = () => {
               Skills
             </NavLink>
             <NavLink
-              className="navlink"
+              className="nav-link projects"
               activeClass="active"
               smooth
               spy
@@ -128,7 +131,7 @@ const Navbar = () => {
               Projects
             </NavLink>
             <NavLink
-              className="navlink"
+              className="nav-link contact"
               activeClass="active"
               smooth
               spy
@@ -142,7 +145,8 @@ const Navbar = () => {
               Contact
             </NavLink>
             <a
-              className="navlink"
+              id="resume-link-1"
+              className="nav-link resume"
               onClick={() => {
                 handelClick(6);
                 window.open(
@@ -165,6 +169,7 @@ const Navbar = () => {
       </Show>
       <Hide above="md">
         <Box
+          id="nav-menu"
           // style={{backgroundColor:back=="black"?"#5C6471:""}}
           position="fixed"
           pr="10px"
@@ -181,6 +186,7 @@ const Navbar = () => {
         >
           <Box>
             <Heading
+              id="user-detail-name"
               pl="30px"
               color="red"
               fontFamily="serif"
@@ -213,7 +219,7 @@ const Navbar = () => {
               >
                 <MenuItem bgColor="black" margin={1}>
                   <NavLink
-                    className="navlink2"
+                    className="nav-link home"
                     activeClass="active"
                     smooth
                     spy
@@ -230,7 +236,7 @@ const Navbar = () => {
                     smooth
                     spy
                     to="about"
-                    className="navlink2"
+                    className="nav-link about"
                     onClick={() => handelClick(2)}
                     style={{ color: linkno === 2 ? "red" : "" }}
                   >
@@ -239,7 +245,7 @@ const Navbar = () => {
                 </MenuItem>
                 <MenuItem bgColor="black" margin={1}>
                   <NavLink
-                    className="navlink2"
+                    className="nav-link skills"
                     activeClass="active"
                     smooth
                     spy
@@ -253,7 +259,7 @@ const Navbar = () => {
 
                 <MenuItem bgColor="black" margin={1}>
                   <NavLink
-                    className="navlink2"
+                    className="nav-link projects"
                     activeClass="active"
                     smooth
                     spy
@@ -270,7 +276,7 @@ const Navbar = () => {
                     smooth
                     spy
                     to="contact"
-                    className="navlink2"
+                    className="nav-link contact"
                     onClick={() => handelClick(5)}
                     style={{ color: linkno === 5 ? "red" : "" }}
                   >
@@ -279,7 +285,8 @@ const Navbar = () => {
                 </MenuItem>
                 <MenuItem bgColor="black" margin={1}>
                   <a
-                    className="navlink2"
+                    id="resume-link-1"
+                    className="nav-link resume"
                     onClick={() => {
                       handelClick(6);
                       window.open(

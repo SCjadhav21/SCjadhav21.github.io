@@ -43,12 +43,12 @@ html {
   cursor: pointer;
 }
 
-.project_image img {
+.project-card img {
   border-radius: 10px;
   height: 170px;
   transition: transform 0.5s linear;
 }
-.project_image img:hover {
+.project-card img:hover {
   transform: scale(1.1);
   transition: 0.5s ease-in;
 }

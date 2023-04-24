@@ -232,13 +232,14 @@ export const Skills = () => {
               <Box key={index}>
                 <Box>
                   <Box
+                    className="skills-card"
                     key={elem.name}
                     display="flex"
                     justifyContent="center"
                     justifyItems="center"
                   >
                     <Img
-                      className="SkillImage"
+                      className="skills-card-img"
                       // borderRadius="50px"
                       height="110px"
                       w="70%"
@@ -254,7 +255,7 @@ export const Skills = () => {
                     color="#fff"
                     p="10px 0px"
                   >
-                    <h3>{elem.name}</h3>
+                    <h3 className="skills-card-name">{elem.name}</h3>
                   </Box>
                 </Box>
               </Box>

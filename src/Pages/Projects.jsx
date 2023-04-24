@@ -31,18 +31,18 @@ const Projects = () => {
                 <Box
                   display="flex"
                   justifyContent="center"
-                  className="project_image"
+                  className="project-card"
                 >
                   <Img src={ShopQ_mart} alt="ShoQ_mart" />
                 </Box>
 
                 <Box className="project_name">
-                  <h2>
+                  <h2 className="project-title">
                     ShopQ_Mart <p></p> (Group project)
                   </h2>
                 </Box>
                 <Box className="project_desc">
-                  <p>
+                  <p className="project-description">
                     ShopQ_Mart is an Indian online marketplace, also India's
                     first e-commerce market that connects sellers and buyers
                     online and offers a trusted and safe online environment for
@@ -57,7 +57,7 @@ const Projects = () => {
                   pt="10px"
                   className="project_tech_stack"
                 >
-                  <h5>
+                  <h5 className="project-tech-stack">
                     <span>Tech Stack :</span> React, Nodejs, Javascript,
                     Express, Html5, Mongodb, Css3, Mongoose, Cyclic, Readux,
                     Chakra-UI, Vercel
@@ -66,6 +66,7 @@ const Projects = () => {
                 <Box className="project_icon">
                   <Box className="github_link">
                     <a
+                      className="project-github-link"
                       href="https://github.com/SCjadhav21/Project_ShopQ_Mart"
                       rel="noopener norefferer"
                       target="_blank"
@@ -78,6 +79,7 @@ const Projects = () => {
                   </Box>
                   <Box className="deploy_link">
                     <a
+                      className="project-deployed-link"
                       href="https://shopqmart.vercel.app/"
                       rel="noopener norefferer"
                       target="_blank"
@@ -96,18 +98,18 @@ const Projects = () => {
                 <Box
                   display="flex"
                   justifyContent="center"
-                  className="project_image"
+                  className="project-card"
                 >
                   <Img src={FoodHub} alt="FoodHub" />
                 </Box>
 
                 <Box className="project_name">
-                  <h2>
+                  <h2 className="project-title">
                     Food_Hub <p></p> (Group project)
                   </h2>
                 </Box>
                 <Box className="project_desc">
-                  <p>
+                  <p className="project-description">
                     Food Hub.com leading meat-free lifestyle platform, indulging
                     you with delicious discounted vegetarian and vegan meals at
                     popular restaurants and cafes. Experience a tasty, healthy ,
@@ -122,7 +124,7 @@ const Projects = () => {
                   pt="10px"
                   className="project_tech_stack"
                 >
-                  <h5>
+                  <h5 className="project-tech-stack">
                     <span>Tech Stack :</span> Javascript, Html5, Css3, Reactjs ,
                     Chakra-UI, Vercel, Netlify
                   </h5>
@@ -130,6 +132,7 @@ const Projects = () => {
                 <Box className="project_icon">
                   <Box className="github_link">
                     <a
+                      className="project-github-link"
                       href="https://github.com/SCjadhav21/Project_Food_Hub"
                       rel="noopener norefferer"
                       target="_blank"
@@ -142,6 +145,7 @@ const Projects = () => {
                   </Box>
                   <Box className="deploy_link">
                     <a
+                      className="project-deployed-link"
                       href="https://iridescent-biscochitos-61ac19.netlify.app/"
                       rel="noopener norefferer"
                       target="_blank"
@@ -160,18 +164,18 @@ const Projects = () => {
                 <Box
                   display="flex"
                   justifyContent="center"
-                  className="project_image"
+                  className="project-card"
                 >
                   <Img src={shop} alt="clockify" />
                 </Box>
 
                 <Box className="project_name">
-                  <h2>
+                  <h2 className="project-title">
                     S-SENSE<p></p>(Individual Project)
                   </h2>
                 </Box>
                 <Box className="project_desc">
-                  <p>
+                  <p className="project-description">
                     This app is a Fashion-Wear app for men and women, and we can
                     buy the Products from this app at our selected location.
                   </p>
@@ -184,7 +188,7 @@ const Projects = () => {
                   pt="10px"
                   className="project_tech_stack"
                 >
-                  <h5>
+                  <h5 className="project-tech-stack">
                     <span>Tech Stack :</span> React-js, JavaScript, CSS, axios,
                     Chakra UI.
                   </h5>
@@ -193,6 +197,7 @@ const Projects = () => {
                 <Box className="project_icon">
                   <Box className="github_link">
                     <a
+                      className="project-github-link"
                       href="https://github.com/SCjadhav21/SCjadhav21-ssense.com-clone"
                       rel="noopener norefferer"
                       target="_blank"
@@ -205,6 +210,7 @@ const Projects = () => {
                   </Box>
                   <Box className="deploy_link">
                     <a
+                      className="project-deployed-link"
                       href="https://project-sscence.vercel.app/"
                       rel="noopener norefferer"
                       target="_blank"
@@ -223,18 +229,18 @@ const Projects = () => {
                 <Box
                   display="flex"
                   justifyContent="center"
-                  className="project_image"
+                  className="project-card"
                 >
                   <Img src={indeed} alt="clockify" />
                 </Box>
 
                 <Box className="project_name">
-                  <h2>
+                  <h2 className="project-title">
                     Indeed.com <p></p> (Group project)
                   </h2>
                 </Box>
                 <Box className="project_desc">
-                  <p>
+                  <p className="project-description">
                     This website provides a job for job seekers, a user can
                     Search for a job as per his requirements like JobRole and
                     where user want to search JobRole(location), If create a
@@ -251,13 +257,14 @@ const Projects = () => {
                   pt="10px"
                   className="project_tech_stack"
                 >
-                  <h5>
+                  <h5 className="project-tech-stack">
                     <span>Tech Stack :</span> JavaScript, Html, CSS,
                   </h5>
                 </Box>
                 <Box className="project_icon">
                   <Box className="github_link">
                     <a
+                      className="project-github-link"
                       href="https://github.com/akshaykadu24/indeed.com-clone"
                       rel="noopener norefferer"
                       target="_blank"
@@ -270,6 +277,7 @@ const Projects = () => {
                   </Box>
                   <Box className="deploy_link">
                     <a
+                      className="project-deployed-link"
                       href="https://deft-florentine-9618bc.netlify.app/"
                       rel="noopener norefferer"
                       target="_blank"
@@ -288,18 +296,18 @@ const Projects = () => {
                 <Box
                   display="flex"
                   justifyContent="center"
-                  className="project_image"
+                  className="project-card"
                 >
                   <Img src={food} alt="food" />
                 </Box>
 
                 <Box className="project_name">
-                  <h2>
+                  <h2 className="project-title">
                     Zappos.com <p></p> (Group project)
                   </h2>
                 </Box>
                 <Box className="project_desc">
-                  <p>
+                  <p className="project-description">
                     Zappos.com is an e-commerce website, where users can buy
                     shoes, clothing, handbags, accessories, and more.
                   </p>
@@ -312,13 +320,14 @@ const Projects = () => {
                   pt="10px"
                   className="project_tech_stack"
                 >
-                  <h5>
+                  <h5 className="project-tech-stack">
                     <span>Tech Stack :</span> JavaScript,Html, CSS,
                   </h5>
                 </Box>
                 <Box className="project_icon">
                   <Box className="github_link">
                     <a
+                      className="project-github-link"
                       href="https://github.com/sanajitjana/Masai-Zappos-Army"
                       rel="noopener norefferer"
                       target="_blank"
@@ -331,6 +340,7 @@ const Projects = () => {
                   </Box>
                   <Box className="deploy_link">
                     <a
+                      className="project-deployed-link"
                       href="https://masai-zappos-clone.netlify.app/"
                       rel="noopener norefferer"
                       target="_blank"
