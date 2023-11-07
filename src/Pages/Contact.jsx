@@ -87,6 +87,7 @@ const Contact = () => {
                   <SimpleGrid columns={[1, 2, 2, 2]} spacing="20px">
                     <Box className="icon_box">
                       <a
+                        id="contact-linkedin"
                         href="https://www.linkedin.com/in/suraj-jadhav-b99446233/"
                         rel="noopener norefferer"
                         target="_blank"
@@ -98,6 +99,7 @@ const Contact = () => {
                     </Box>
                     <Box className="icon_box">
                       <a
+                        id="contact-github"
                         href="https://github.com/SCjadhav21"
                         rel="noopener norefferer"
                         target="_blank"
@@ -109,6 +111,7 @@ const Contact = () => {
                     </Box>
                     <Box className="icon_box">
                       <a
+                        id="contact-email"
                         href="mailto:jadhavsuraj4567@gmail.com"
                         rel="noopener norefferer"
                         target="_blank"
@@ -132,7 +135,7 @@ const Contact = () => {
                     <Box className="icon_box">
                       <a href="" rel="noopener norefferer" target="_blank">
                         <Box className="icon" id="icon4">
-                          <h3>8830637124</h3>
+                          <h3 id="contact-phone">8830637124</h3>
                         </Box>
                       </a>
                     </Box>

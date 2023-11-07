@@ -36,6 +36,7 @@ const About = () => {
           w={["full", "full", "40%"]}
         >
           <Img
+            className="home-img"
             border="2px solid red"
             borderRadius="5%"
             color={"red"}
@@ -79,9 +80,10 @@ const About = () => {
                     live on the internet.
                   </li>
                   <li style={{ margin: "20px 0px" }}>
-                    I'm a passionate Mern Developer, with strong administrative
-                    and communication skills, good attention to detail, and the
-                    ability to write efficient code using MERN Stack.
+                    I'm a passionate Mern and Mean Developer, with strong
+                    administrative and communication skills, good attention to
+                    detail, and the ability to write efficient code using MERN
+                    Stack.
                   </li>
                   <li style={{ margin: "20px 0px" }}>
                     My interest in web development started back last year when I
@@ -110,7 +112,7 @@ const About = () => {
                           src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-1.svg"
                           alt="icon"
                         />
-                        <Text>1200+ Hours Practical Coding</Text>
+                        <Text>2000+ Hours Practical Coding</Text>
                       </HStack>
                       <HStack spacing={5}>
                         <Img
